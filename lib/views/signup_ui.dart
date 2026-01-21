@@ -92,7 +92,7 @@ class _SignupUiState extends State<SignupUi> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     prefixIcon: const Icon(
-                      Icons.person_2_outlined,
+                      Icons.mail,
                       color: Colors.grey,
                     ),
                     hintText: 'E-Mail',
@@ -111,8 +111,9 @@ class _SignupUiState extends State<SignupUi> {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8.0),
                     ),
+                    
                     prefixIcon: const Icon(
-                      Icons.person_2_outlined,
+                      Icons.phone,
                       color: Colors.grey,
                     ),
                     hintText: 'Phone No',
@@ -217,7 +218,7 @@ class _SignupUiState extends State<SignupUi> {
                           color: Colors.black,
                         ),
                       ),
-                      
+
                       Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
