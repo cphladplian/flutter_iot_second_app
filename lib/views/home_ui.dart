@@ -1,6 +1,5 @@
-// ignore_for_file: sort_child_properties_last
-
 import 'package:flutter/material.dart';
+import 'signin_ui.dart';
 
 class HomeUi extends StatelessWidget {
   const HomeUi({super.key});
@@ -12,91 +11,88 @@ class HomeUi extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            const SizedBox(height: 150),
 
-            SizedBox(
-              height: 150.0,
-            ),
             ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
+              borderRadius: BorderRadius.circular(20),
               child: Image.asset(
                 'assets/images/logo.png',
-                width: 250.0,
-                height: 250.0,
+                width: 250,
+                height: 250,
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
-              height: 50.0,
-              ),
-            Text(
+
+            const SizedBox(height: 50),
+
+            const Text(
               "Hi there IoT SAU",
               style: TextStyle(
-                fontSize: 25.0,
+                fontSize: 25,
                 fontWeight: FontWeight.bold,
-                color: Colors.black
               ),
-              ),
-              
-              Text(
+            ),
+
+            Text(
               "Southeast Asia University",
               style: TextStyle(
-                fontSize: 18.0,
-                color: Colors.grey[800]
+                fontSize: 18,
+                color: Colors.grey[800],
               ),
-              ),
+            ),
 
-              Text(
+            Text(
               "Created by Chatinon IoT-SAU 2026",
               style: TextStyle(
-                fontSize: 18.0,
-                color: Colors.grey[800]
+                fontSize: 18,
+                color: Colors.grey[800],
               ),
-              ),
-              SizedBox(
-              height: 50.0,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  OutlinedButton(
-                    onPressed: (){},
-                    child: Text(
-                      "LOGIN",
-                      style: TextStyle(
-                        color: Colors.black
+            ),
+
+            const SizedBox(height: 50),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SigninUi(),
                       ),
+                    );
+                  },
+                  style: OutlinedButton.styleFrom(
+                    fixedSize: const Size(150, 50),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    style: OutlinedButton.styleFrom(
-                      fixedSize: Size(
-                        150, 
-                        50),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadiusGeometry.circular(8.0),
-                        ),
-                    ),
-                    
                   ),
-                  SizedBox(
-                    width: 20.0,
+                  child: const Text(
+                    "LOGIN",
+                    style: TextStyle(color: Colors.black),
                   ),
-                  ElevatedButton(
-                    onPressed: (){},
-                    child: Text(
-                      "SIGNUP",
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
+                ),
+
+                const SizedBox(width: 20),
+
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(150, 50),
+                    backgroundColor: Colors.black,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    style: OutlinedButton.styleFrom(
-                      fixedSize: Size(
-                        150, 
-                        50),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadiusGeometry.circular(8.0),
-                        ),
-                        backgroundColor: Colors.black,
-                    ),
-                    ),
-              ],)
+                  ),
+                  child: const Text(
+                    "SIGNUP",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
