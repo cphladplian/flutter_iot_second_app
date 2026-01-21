@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'signin_ui.dart';
+import 'signup_ui.dart';
 
 class HomeUi extends StatelessWidget {
   const HomeUi({super.key});
@@ -78,7 +79,14 @@ class HomeUi extends StatelessWidget {
                 const SizedBox(width: 20),
 
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignupUi(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     fixedSize: const Size(150, 50),
                     backgroundColor: Colors.black,
