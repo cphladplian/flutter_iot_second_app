@@ -1,4 +1,4 @@
-## Mobile Application with Flitter&Dart
+## Mobile Application with Flutter&Dart
 
 ## UI Only for HomeUI, SigninUI, SignupUI
 
