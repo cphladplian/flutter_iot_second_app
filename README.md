@@ -1,6 +1,6 @@
 ## Mobile Application with Flitter&Dart
 
-## UI Only for HomeUI, SigninUi, SignupUi
+## UI Only for HomeUI, SigninUI, SignupUI
 
 <img width="250" src="https://github.com/user-attachments/assets/0fb75d29-44dc-4b9f-bf79-fd35a2ddf416" />
 
