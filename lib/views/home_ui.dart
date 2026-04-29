@@ -26,7 +26,7 @@ class HomeUi extends StatelessWidget {
 
             const SizedBox(height: 50),
 
-            const Text(
+            Text(
               "Hi there IoT SAU",
               style: TextStyle(
                 fontSize: 25,
