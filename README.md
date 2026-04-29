@@ -1,16 +1,27 @@
-# flutter_iot_second_app
+## 📱 Flutter Login UI App
+A simple mobile application with Login and Signup UI built using Flutter.
 
-A new Flutter project.
+## 🚀 Features
+- 🔐 Login Screen
+- 📝 Signup Screen
+- 🔄 Navigation between screens
+- 🎨 Clean and modern UI
 
-## Getting Started
+## 🛠️ Tech Stack
+- Flutter
+- Dart
+- Google Fonts
+- Font Awesome
 
-This project is a starting point for a Flutter application.
+## 📦 Installation
+- git clone https://github.com/your-username/flutter_iot_second_app.git
+- cd flutter_iot_second_app
+- flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+## ▶️ Usage
+- flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Screenshots
+<img width="250" src="https://github.com/user-attachments/assets/0fb75d29-44dc-4b9f-bf79-fd35a2ddf416"/>
+<img width="250" src="https://github.com/user-attachments/assets/cc97da7e-9dd9-4e5f-8629-711464ebd442"/>
+<img width="250" src="https://github.com/user-attachments/assets/eca44f6c-7bc6-4233-a7fe-fb18c1c775c9"/>
